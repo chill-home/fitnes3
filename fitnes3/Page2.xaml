@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="fitnes3.Page2"
+             BackgroundImageSource="back3.png">
+    <StackLayout>
+        <RadioButton GroupName="Sport" MinimumHeightRequest="15"  Margin="85,98,255,0" x:Name="Work" Content="Work" />
+        <RadioButton GroupName="Sport" MinimumHeightRequest="15"  Margin="85,70,255,0" x:Name="Yoga" Content="Yoga" />
+        <RadioButton GroupName="Sport" MinimumHeightRequest="15"  Margin="85,70,255,0" x:Name="Run"  Content="Run"/>
+        <StackLayout>
+            <Label x:Name="timerLabel" FontFamily="Montserrat" FontAttributes="Bold" FontSize="25" Margin="145,220"/>
+        </StackLayout>
+    </StackLayout>
+    
+</ContentPage>
+    

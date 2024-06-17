@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="fitnes3.Page4"
+             BackgroundImageSource="backlog">
+    <ContentPage.Content>
+        
+            <StackLayout>
+                <Frame Margin="35,350" CornerRadius="15" Padding="0" >
+                    <Frame Padding="1">
+                    <Entry TextColor="Black" WidthRequest="200" Placeholder="Введите логин" PlaceholderColor="Gray" x:Name="UsernameEntry"/>
+                    </Frame>
+                </Frame>
+                <Frame Margin="35,-330" CornerRadius="15" Padding="0" >
+                    <Frame  Padding="1">
+                    <Entry TextColor="Black" WidthRequest="200" Placeholder="Введите пароль" PlaceholderColor="Gray " x:Name="PasswordEntry" IsPassword="True"/>
+                    </Frame>
+                </Frame>
+            <Frame CornerRadius="15" Padding="0" Margin="35, 345">
+                <Frame Padding="1">
+                    <Entry  TextColor="Black" WidthRequest="200" Placeholder="Введите email" PlaceholderColor="Gray" x:Name="EmailEntry"/>
+                </Frame>
+            </Frame>
+            <Button BackgroundColor="LightPink" Text="CREAT " TextColor="White" CornerRadius="15" Margin="115,-310" x:Name="CreateButton"  />
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

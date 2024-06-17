@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="fitnes3.Page5"
+             BackgroundImageSource="backue.png">
+    <RelativeLayout>
+        
+
+        <Button Text="Добавить" 
+            BackgroundColor="White" 
+            TextColor="Gray" 
+            FontSize="12" 
+            FontFamily="Poppins"
+            RelativeLayout.XConstraint="125"
+            RelativeLayout.YConstraint="595"
+            Clicked="AddWaterButtonClicked"/>
+
+        <Label Text="0" TextColor="Black" FontSize="36" 
+           RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.1}"
+           RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.1}"
+           x:Name="TotalWaterIntakeLabel"/>
+
+
+        <Label x:Name="Label1" Text="Выпито: 0 мл" FontSize="12" TextColor="Black" RelativeLayout.XConstraint="55" RelativeLayout.YConstraint="360" FontAttributes="Bold"/>
+        <Label x:Name="Label2" Text="Выпито: 0 мл" FontSize="12" RelativeLayout.XConstraint="55" RelativeLayout.YConstraint="480" TextColor="Black" FontAttributes="Bold"/>
+        <Label x:Name="Label3" Text="Выпито: 0 мл" FontSize="12" RelativeLayout.XConstraint="175" RelativeLayout.YConstraint="360" TextColor="Black" FontAttributes="Bold"/>
+        <Label x:Name="Label4" Text="Выпито: 0 мл" FontSize="12" RelativeLayout.XConstraint="175" RelativeLayout.YConstraint="480" TextColor="Black" FontAttributes="Bold"
+               />
+        
+    </RelativeLayout>
+</ContentPage>

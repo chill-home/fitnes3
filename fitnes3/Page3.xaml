@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="fitnes3.Page3"
+             BackgroundImageSource="background4.png">
+    <ContentPage.Content>
+        <Grid BackgroundColor="#00968800">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1.5*" />
+                <RowDefinition Height="8*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+
+            <!-- Заголовок и изображение -->
+            
+
+            
+
+            <!-- Диаграмма -->
+            <Frame Grid.Row="2" BackgroundColor="Transparent" Padding="20" Margin="95, 87">
+                <AbsoluteLayout x:Name="GraphLayout" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <!-- Фон диаграммы -->
+                    <BoxView BackgroundColor="White" 
+                             AbsoluteLayout.LayoutBounds="0,0,1,1"
+                             AbsoluteLayout.LayoutFlags="All"/>
+                </AbsoluteLayout>
+            </Frame>
+
+            <!-- Ввод веса и выбор месяца -->
+            <StackLayout Grid.Row="3" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+                <Entry x:Name="WeightEntry" 
+                       Placeholder="Вес (кг)" 
+                       Keyboard="Numeric" 
+                       WidthRequest="100" 
+                       HorizontalOptions="FillAndExpand"/>
+                <Picker x:Name="MonthPicker" 
+                        Title="Месяц" 
+                        WidthRequest="150" 
+                        HorizontalOptions="FillAndExpand">
+                    <Picker.Items>
+                        <x:String>Январь</x:String>
+                        <x:String>Февраль</x:String>
+                        <x:String>Март</x:String>
+                        <x:String>Апрель</x:String>
+                        <x:String>Май</x:String>
+                        <x:String>Июнь</x:String>
+                        <x:String>Июль</x:String>
+                        <x:String>Август</x:String>
+                        <x:String>Сентябрь</x:String>
+                        <x:String>Октябрь</x:String>
+                        <x:String>Ноябрь</x:String>
+                        <x:String>Декабрь</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Button Text="Сохранить"
+                        Clicked="OnSaveButtonClicked"
+                        WidthRequest="100"/>
+        <Label  x:Name="exerciseLabel" FontSize="20" FontFamily="Montserrat" FontAttributes="Bold" TextColor="White"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

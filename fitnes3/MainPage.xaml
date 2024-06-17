@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="fitnes3.MainPage"
+             xmlns:local="clr-namespace:fitnes3"
+             BackgroundImageSource="backlog">
+    
+    
+    <StackLayout>
+        <Frame Margin="35,350" CornerRadius="15" Padding="0" >
+            <Frame Padding="1">
+                <Entry TextColor="Black" WidthRequest="200" Placeholder="Введите логин" PlaceholderColor="Gray" x:Name="usernameEntry"/>
+            </Frame>
+        </Frame>
+        <Frame Margin="35,-330" CornerRadius="15" Padding="0" >
+            <Frame  Padding="1">
+                <Entry TextColor="Black" WidthRequest="200" Placeholder="Введите пароль" PlaceholderColor="Gray" x:Name="passwordEntry"/>
+            </Frame>
+        </Frame>
+        <Button BackgroundColor="LightPink" Text="Войти" TextColor="White" CornerRadius="15" Margin="115,450" Clicked="LoginClicked"/>
+
+
+    <Button Text="Создать аккаунт?" TextColor="LightGray" FontSize="13" Margin="30,-610" FontAttributes="Bold"  BackgroundColor="Transparent" Clicked="RegisterClicked"/>
+    </StackLayout>
+    
+
+
+
+
+</ContentPage>
